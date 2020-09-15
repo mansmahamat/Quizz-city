@@ -22,10 +22,10 @@ let app = {
       $('.scoree').text( app.counterGoodAnswer)
       
       if (app.counterGoodAnswer === 10){
-        swal("Bien joué 👏");
+        swal("Bien joué 👏 10 bonnes réponses");
       }
       if (app.counterGoodAnswer === 20){
-        swal("SUPER 👏");
+        swal("SUPER 👏20 bonnes réponses");
       }
      /* console.log(app.counterQuestion)
       console.log(app.counterGoodAnswer) */
