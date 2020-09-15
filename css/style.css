@@ -1,0 +1,144 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+ 
+  background-attachment:fixed;
+}
+
+
+
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext2{
+  position:absolute;
+  top:60%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+  
+}
+
+#borderline {
+  background-color:#fff;
+  color:#000;
+  padding:20px;
+  
+}
+
+#borderline a {
+  color : red;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+  height: 193px !important;
+  width: 290px !important;
+}
+
+
+
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 18.5%;
+  left: 90.25%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: #b9132c;
+  padding: .5px;
+  border-radius: 4px;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+  background-color: #7dbbf1;
+}
+
+#para1{
+  display:none;
+}
+.active #para1{
+  display:block;
+}
+
+
+.ui.red.label, .ui.red.labels .label {
+  
+  font-size: 18px;
+  width: max-content;
+  display: inline-flex;
+}
+
+
+.ui.yellow.label, .ui.yellow.labels .label {
+  font-size: 18px;
+  width: max-content;
+  display: inline-flex;
+}
+
+.scoree {
+  margin-left: 10px;
+}
+
+.totall {
+  margin-left: 10px;
+}
+
+.ok {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-flex;
+}
+
+
+.positive {
+  background-color: darkolivegreen;
+}

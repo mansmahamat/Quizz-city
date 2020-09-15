@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quizz</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://kit.fontawesome.com/2466f3c4ea.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <section class="text-gray-700 text-center body-font relative">
+    <div class="container px-16 py-12 mx-auto flex sm:flex-no-wrap flex-wrap">
+      <div  class="lg:w-2/3 md:w-1/2 bg-gray-300 h-auto  rounded-lg overflow-hidden sm:mr-10 p-10 flex items-start justify-center relative">
+        <div class="w-full text-center max-w-xs">
+          <section id="playground">
+            <h3 id="question">Quelle est la capitale de <bold class="pays"></bold> ? </h3>
+            <form class="formulaire mt-12">
+              <div id="reponse" class="ui form">
+                  <div class="inline fields">
+                      <div class="field">
+                          <div class="ui radio checkbox">
+                              <input class="inputValue" type="radio" value="" name="frequency">
+                              <label style="color: white;"></label>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <div class="ui radio checkbox">
+                              <input class="inputValue" type="radio" value="" name="frequency">
+                              <label style="color: white;"></label>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <div class="ui radio checkbox">
+                              <input class="inputValue" type="radio" value="" name="frequency">
+                              <label style="color: white;"></label>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <div class="ui radio checkbox">
+                              <input class="inputValue" type="radio" value="" name="frequency">
+                              <label style="color: white;"></label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="ui message dimmer mt-10">
+                  <i class="close icon"></i>
+                      <div class="header">
+                          Bonne réponse !
+                      </div>
+              </div>
+              <button type="submit" id="btnCheckAnswer" class="mt-12 bg-black text-white font-bold py-2 px-4 rounded">Valider</button>
+              <button id="nextQuestion" class="mt-12 bg-purple-500 text-white font-bold py-2 px-4 rounded">Question suivante</button>
+          </form>
+          <div class="column" >
+           
+        </div>
+        
+        <div class="mt-8 bg-blue-700 text-white font-black py-4  rounded-full">Score :  <div class="scoree"></div></div>
+        
+        
+        <div class="mt-8 bg-orange-600 text-white font-black py-4  rounded-full">Questions :  <div class="totall"></div></div>
+        
+        
+        
+          </section>
+        </div>
+
+        
+      </div>
+      <div  class="lg:w-1/3 md:w-1/2 card bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4">
+         <img class="w-full h-56  image object-cover object-center" src="monde1.jpg" alt="avatar">
+          <div class="py-4 px-6">
+              <h1 class="text-2xl font-semibold text-gray-800 header-country"> </h1>
+              <p class="py-2 text-lg text-gray-700 italic meta"><span class="subregion"></span></p>
+              <div class="flex items-center  mt-4 text-gray-700">
+                  <p>Capitale : </p>
+                  <h1 class="px-2 capitale "></h1>
+              </div>
+              <div class="flex items-center  mt-4 text-gray-700">
+                <p>Habitants : </p>
+                  <h1 class="px-2 habitants"></h1>
+              </div>
+              <div class="flex items-center  mt-4 text-gray-700">
+                <p>Monnaie : </p>
+                  <h1 class="px-2 monnaie"></h1>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+    
+  
+  </div>
+
+  
+
+
+
+
+ 
+  
+
+ 
+
+
+  
+
+ 
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
